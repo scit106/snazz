@@ -1,0 +1,83 @@
+/*********** HTML Overrides *********/
+
+body {
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 48pt;
+}
+
+/*********** Fonts ****************/
+.sans-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.extra-light {
+  font-weight: 200;
+}
+
+.dot-font {
+  font-family: 'Codystar', cursive;
+}
+
+.open-font {
+  font-family: 'Londrina Outline', cursive;
+}
+
+.thin-font {
+  font-family: 'Geostar', cursive;
+}
+
+/*********** Colors ****************/
+
+.black-background {
+  background-color: #000
+}
+
+.light-grey {
+  color: #fafafa
+}
+
+/******* Flexbox Utilities *******/
+/*** Parent ***/
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-align-right {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+/*********** Specific Classes ********/
+
+.full-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.title-block {
+  padding: 5%;
+  border-left: 1px solid #fafafa;
+}
