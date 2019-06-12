@@ -64,3 +64,7 @@ gem "haml", "~> 5.1"
 gem "pg", "~> 1.1"
 
 gem "dotenv-rails", "~> 2.7"
+
+gem "rspec-rails", "~> 3.8"
+
+gem "active_model_serializers", "~> 0.10.9"
