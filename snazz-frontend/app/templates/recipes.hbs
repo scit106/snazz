@@ -3,6 +3,14 @@
   {{#each model as |recipe|}}
     <Card>
       <h3 class="align-center margin-bottom">{{recipe.name}}</h3>
+      <div class="margin-bottom">
+        {{#each recipe.ingredients as |ingredient|}}
+          <p>
+            <span class="bold">{{ingredient.quantity}} {{ingredient.unit}}</span>
+            {{ingredient.name}}
+          </p>
+        {{/each}}
+      </div>
       <p>{{recipe.instructions}}</p>
     </Card>
   {{/each}}
