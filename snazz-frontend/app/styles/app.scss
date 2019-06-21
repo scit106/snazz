@@ -1,0 +1,104 @@
+/** This is duplicated but oh well **/
+/*********** HTML Overrides *********/
+
+body {
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 48pt;
+}
+
+/*********** Fonts ****************/
+
+.extra-light {
+  font-weight: 200;
+}
+
+.dot-font {
+  font-family: 'Codystar', cursive;
+}
+
+.open-font {
+  font-family: 'Londrina Outline', cursive;
+}
+
+.thin-font {
+  font-family: 'Geostar', cursive;
+}
+
+/*** Variables ***/
+$default-spacing: 10px;
+$black: #000;
+$light-grey: #fafafa;
+
+/*********** Colors ****************/
+
+.black-background {
+  background-color: $black;
+}
+
+.light-grey {
+  color: $light-grey;
+}
+
+.light-grey-background {
+  background-color: $light-grey;
+}
+
+/******* Flexbox Utilities *******/
+/*** Parent ***/
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-align-right {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+/*** Alignment ***/
+.align-center {
+  text-align: center;
+}
+
+/*********** Specific Classes ********/
+
+.full-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.title-block {
+  padding: 5%;
+  border-left: 1px solid #fafafa;
+}
+
+.card {
+  padding: $default-spacing;
+  box-shadow: 1px 1px 10px rgba(125, 125, 125, 0.5);
+  width: 320px;
+  margin: $default-spacing;
+  border-radius: $default-spacing/2;
+}
