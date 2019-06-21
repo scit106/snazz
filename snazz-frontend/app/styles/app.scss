@@ -1,4 +1,6 @@
-/** This is duplicated but oh well **/
+@import 'variables';
+@import 'spacing';
+
 /*********** HTML Overrides *********/
 
 body {
@@ -31,11 +33,6 @@ h1 {
 .thin-font {
   font-family: 'Geostar', cursive;
 }
-
-/*** Variables ***/
-$default-spacing: 10px;
-$black: #000;
-$light-grey: #fafafa;
 
 /*********** Colors ****************/
 
@@ -96,7 +93,7 @@ $light-grey: #fafafa;
 }
 
 .card {
-  padding: $default-spacing;
+  padding: $default-spacing * 2;
   box-shadow: 1px 1px 10px rgba(125, 125, 125, 0.5);
   width: 320px;
   margin: $default-spacing;

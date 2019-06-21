@@ -1,0 +1,36 @@
+$factors: ("quarter": 0.25, "half": 0.5, "double": 2);
+$directions: "top", "left", "bottom", "right";
+
+.margin {
+  margin: $default-spacing;
+}
+
+.padding {
+  padding: $default-spacing;
+}
+
+@each $direction in $directions {
+  .margin-#{$direction} {
+    margin-#{$direction}: $default-spacing;
+  }
+  .padding-#{$direction} {
+    padding-#{$direction}: $default-spacing;
+  }
+}
+
+@each $name, $value in $factors {
+  .margin-#{$name} {
+    margin: $default-spacing * $value;
+  }
+  .padding-#{$name} {
+    padding: $default-spacing * $value;
+  }
+  @each $direction in $directions {
+    .margin-#{$direction}-#{$name} {
+      margin-#{$direction}: $default-spacing * $value;
+    }
+    .padding-#{$direction}-#{$name} {
+      padding-#{$direction}: $default-spacing * $value;
+    }
+  }
+}

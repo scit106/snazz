@@ -1,7 +1,9 @@
-<h2 class="align-center">Recipes go here</h2>
-{{#each model as |recipe|}}
-  <Card>
-    <h3 class="align-center">{{recipe.name}}</h3>
-    <p>{{recipe.instructions}}</p>
-  </Card>
-{{/each}}
+<h2 class="align-center padding">Recipes go here</h2>
+<div class="flex">
+  {{#each model as |recipe|}}
+    <Card>
+      <h3 class="align-center margin-bottom">{{recipe.name}}</h3>
+      <p>{{recipe.instructions}}</p>
+    </Card>
+  {{/each}}
+</div>
