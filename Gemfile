@@ -70,3 +70,5 @@ gem "rspec-rails", "~> 3.8"
 gem "active_model_serializers", "~> 0.10.9"
 
 gem "rack-cors", "~> 1.0"
+
+gem "devise", "~> 4.6"
