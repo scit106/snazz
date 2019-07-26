@@ -3,6 +3,10 @@ class Api::V1::RecipesController < ActionController::API
     render json: Recipe.all, include: params[:include]
   end
 
+  def show
+    render json: Recipe.find(params[:id]), include: params[:include]
+  end
+
   private
 
   def recipe_params
